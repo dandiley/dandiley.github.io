@@ -22,9 +22,8 @@
 					<h1>I'm <span class="multiText">Leydan</span></h1>
 					<p>EDI Software Engineer | Front End Developer</p>
 					
-					<div class ="btnsx" >
-						<br>
-						<a href="leydandelacruz.pdf" style="text-decoration: none" class="button">Download CV</a>
+					<div class="btnh">
+						<a href="#"><span> Ǝ X P L O R E </span></a>
 					</div>
 				</div>
 				<div class="cols cols1">
@@ -39,12 +38,24 @@
 			<script>
 				var typingEffect = new Typed(".multiText",
 				{
-					strings: ["Hooman","Leydan","hooman","rêveur"],
+					strings: ["Hooman","Leydan","hooman","someone"],
 					loop: true,
 					typeSpeed: 100,
 					backSpeed: 80,
 					backDelay: 1500
 				})
+
+				let button = document.querySelector("body a");
+				button.addEventListener("click",()=>{
+					const span = document.querySelector("a span");
+					span.style.visibility = "visible";
+					setTimeout(()=>
+					{
+						span.style.visibility="hidden";
+						button.style.transition = "1s ease-in-out";
+					},3000);
+				})
+
 			</script>
 
 			<div id="div1">
